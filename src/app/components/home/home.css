@@ -1,0 +1,71 @@
+.container {
+
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(
+    135deg,
+    #141e30,
+    #243b55
+  );
+}
+
+.card {
+
+  width: 400px;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.1);
+
+  backdrop-filter: blur(10px);
+
+  text-align: center;
+
+  color: white;
+
+  box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+input {
+
+  width: 100%;
+
+  padding: 12px;
+
+  margin-top: 20px;
+
+  border-radius: 10px;
+
+  border: none;
+
+  outline: none;
+}
+
+button {
+
+  margin-top: 20px;
+
+  padding: 12px 20px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+.error {
+  color: #ffb3b3;
+}

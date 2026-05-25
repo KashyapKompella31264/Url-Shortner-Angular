@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="card">
+    <h1>AWS URL Shortener</h1>
+
+    <input type="text" placeholder="Enter URL" [(ngModel)]="longUrl" />
+
+    <button (click)="shortenUrl()">
+      {{ loading ? 'Loading...' : 'Shorten URL' }}
+    </button>
+
+    <div *ngIf="shortUrl" class="result">
+      <p>{{ shortUrl }}</p>
+
+      <button (click)="copyUrl()">Copy</button>
+    </div>
+
+    <p *ngIf="error" class="error">
+      {{ error }}
+    </p>
+  </div>
+</div>
